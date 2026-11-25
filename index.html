@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#163b59">
+<title>Portal BMN | Balai POM di Ende</title>
+<style>
+:root{--navy:#163b59;--deep:#102d45;--green:#21845a;--ink:#203547;--muted:#63788a;--paper:#fff;--line:#e1e9ef;--bg:#f3f7fa}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.topline{height:5px;background:linear-gradient(90deg,#163b59,#2986a5,#34a66b)}
+header{max-width:1180px;margin:auto;padding:22px 24px;display:flex;align-items:center;gap:13px}
+.brandmark{width:54px;height:54px;border-radius:16px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:var(--navy);font-weight:900;box-shadow:0 5px 18px #183b5910}
+.brandmark span{font-size:13px;letter-spacing:-.5px}.brandtitle{font-size:13px;font-weight:850;letter-spacing:.1em;color:var(--navy)}.brandsub{font-size:12px;color:var(--muted);margin-top:4px}
+.badge{margin-left:auto;border:1px solid #d5e8df;background:#f5fbf8;color:#317457;border-radius:99px;padding:9px 13px;font-size:10px;font-weight:800;letter-spacing:.08em}
+main{max-width:1180px;margin:8px auto 55px;padding:0 24px}
+.hero{min-height:390px;border-radius:30px;padding:clamp(32px,5vw,62px);position:relative;overflow:hidden;color:white;background:linear-gradient(120deg,#12334f 0%,#255d78 58%,#3c817b 100%);box-shadow:0 24px 55px #153b591c}
+.hero:before{content:"";position:absolute;width:450px;height:450px;border-radius:50%;border:1px solid #ffffff25;right:-130px;top:-240px;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff06}
+.hero:after{content:"";position:absolute;width:250px;height:250px;border:30px solid #4fc58b18;border-radius:50%;left:-140px;bottom:-190px}
+.hero-content{position:relative;max-width:760px;z-index:1}
+.tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff30;background:#ffffff12;border-radius:99px;padding:9px 12px;color:#c9f3dd;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.tag i{width:7px;height:7px;border-radius:50%;background:#65d48b}
+.titleline{display:flex;align-items:center;gap:17px;margin:25px 0 15px}
+.bmn-symbol{flex:none;width:72px;height:72px;border-radius:19px;background:#ffffff;display:grid;place-items:center;color:#173b5e;box-shadow:0 8px 24px #0002;font-weight:900;letter-spacing:-1px}
+.bmn-symbol small{display:block;font-size:10px;text-align:center;color:#32835c;letter-spacing:1px}
+h1{margin:0;font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.045em}h1 em{font-style:normal;color:#8de1ad}
+.hero p{max-width:650px;color:#d8e6ed;font-size:15px;line-height:1.8;margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+button,.button{font:inherit;text-decoration:none;border:0;cursor:pointer;border-radius:12px;padding:13px 18px;font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:10px}
+.primary{background:white;color:var(--navy)}.secondary{background:#ffffff12;border:1px solid #ffffff35;color:white}
+button:hover,.button:hover{transform:translateY(-1px)}
+section.access{display:none}section.access.open{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.intro{margin:38px 2px 18px;display:flex;align-items:end;justify-content:space-between;gap:15px}.eyebrow{color:var(--green);font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.intro h2{margin:6px 0 0;color:var(--navy);font-size:26px;letter-spacing:-.03em}.intro p{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.card{display:flex;flex-direction:column;min-height:205px;padding:23px;border-radius:20px;background:white;border:1px solid var(--line);text-decoration:none;color:inherit;box-shadow:0 8px 25px #153b5908;transition:.18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 15px 35px #153b5914;border-color:#c8dce7}
+.icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:#eaf3f8;color:#27749a;font-size:20px}.card:nth-child(2) .icon{background:#e8f7f0;color:#22805a}.card:nth-child(3) .icon{background:#f0f2fc;color:#586bb0}.card:nth-child(4) .icon{background:#fff4e7;color:#aa7434}
+.card h3{font-size:18px;color:var(--navy);margin:17px 0 7px}.card p{font-size:12px;line-height:1.65;color:var(--muted);margin:0 0 17px}.cta{margin-top:auto;color:#28759a;font-size:12px;font-weight:850}.card:nth-child(2) .cta{color:#22805a}
+.note{margin-top:18px;padding:15px 18px;border:1px solid #d9e9df;background:#f7fcf9;border-radius:14px;font-size:12px;line-height:1.7;color:#526c7e}
+footer{max-width:1180px;margin:auto;padding:20px 24px 28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#738698;font-size:11px}footer strong{color:var(--navy)}
+@media(max-width:650px){header,main,footer{padding-left:16px;padding-right:16px}header{padding-top:15px;padding-bottom:15px}.badge{display:none}.hero{padding:28px 21px;border-radius:23px}.titleline{gap:12px}.bmn-symbol{width:55px;height:55px;border-radius:15px}h1{font-size:clamp(28px,8vw,39px)}.hero p{font-size:13px}.intro{align-items:flex-start;flex-direction:column}.cards{grid-template-columns:1fr;gap:12px}.card{min-height:0;padding:19px}.card h3{margin-top:13px}.intro h2{font-size:23px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="brandmark" aria-label="Badan POM"><span>BPOM</span></div><div><div class="brandtitle">BALAI POM DI ENDE</div><div class="brandsub">Sistem Manajemen Barang Milik Negara</div></div><div class="badge">● PORTAL LAYANAN DIGITAL</div></header>
+<main>
+<section class="hero" aria-labelledby="hero-title"><div class="hero-content">
+<div class="tag"><i></i> Portal Layanan BMN</div>
+<div class="titleline"><div class="bmn-symbol" aria-label="Identitas BMN">BMN<small>ENDE</small></div><h1 id="hero-title">Sistem Manajemen <em>BMN</em><br>Balai POM di Ende</h1></div>
+<p>Portal terpadu untuk pengelolaan Barang Milik Negara, akses layanan, informasi, dan dokumen secara tertib, transparan, dan mudah digunakan.</p>
+<div class="actions"><button class="primary" id="explore" aria-expanded="false" aria-controls="akses">Jelajahi Layanan ↓</button><a class="button secondary" href="admin.html">Masuk Admin →</a></div>
+</div></section>
+<section class="access" id="akses"><div class="intro"><div><div class="eyebrow">Mulai dari sini</div><h2>Pilih Jenis Akses</h2></div><p>Akses layanan sesuai kebutuhan Anda.</p></div>
+<div class="cards">
+<a class="card" href="admin.html"><div class="icon">⌘</div><h3>Login Admin</h3><p>Pengelolaan data, verifikasi pengajuan, pemeliharaan aset dan pemantauan layanan.</p><div class="cta">Masuk sebagai Admin →</div></a>
+<a class="card" href="pengelolaan.html"><div class="icon">▤</div><h3>Formulir Pengelolaan BMN</h3><p>Aset dan persediaan, penggunaan, usulan, pemeliharaan dan peminjaman.</p><div class="cta">Buka Formulir →</div></a>
+<a class="card" href="informasi.html"><div class="icon">◷</div><h3>Informasi & Progres BMN</h3><p>Informasi peminjaman, progres usulan dan laporan pengaduan aset.</p><div class="cta">Lihat Informasi →</div></a>
+<a class="card" href="dokumen.html"><div class="icon">▧</div><h3>Dokumen BMN</h3><p>Pusat dokumen, laporan, sensus, RKBMN dan referensi pengelolaan.</p><div class="cta">Buka Dokumen →</div></a>
+</div><div class="note"><strong>Informasi akses:</strong> Menu Admin hanya digunakan oleh petugas yang memiliki akun dan kewenangan administrator.</div></section>
+</main>
+<footer><span><strong>Balai POM di Ende</strong> · Sistem Manajemen Barang Milik Negara</span><span>Portal Layanan BMN</span></footer>
+<script>document.getElementById('explore').addEventListener('click',function(){const s=document.getElementById('akses'),opened=s.classList.toggle('open');this.setAttribute('aria-expanded',String(opened));this.textContent=opened?'Tutup Layanan ↑':'Jelajahi Layanan ↓';if(opened)s.scrollIntoView({behavior:'smooth',block:'start'});});</script>
+</body></html>
