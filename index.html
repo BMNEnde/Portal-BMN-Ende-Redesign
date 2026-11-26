@@ -16,7 +16,7 @@ header{max-width:1180px;margin:auto;padding:22px 24px;display:flex;align-items:c
 main{max-width:1180px;margin:8px auto 55px;padding:0 24px}
 .hero{min-height:390px;border-radius:30px;padding:clamp(32px,5vw,62px);position:relative;overflow:hidden;color:white;background:linear-gradient(120deg,#12334f 0%,#255d78 58%,#3c817b 100%);box-shadow:0 24px 55px #153b591c}
 .hero:before{content:"";position:absolute;width:450px;height:450px;border-radius:50%;border:1px solid #ffffff25;right:-130px;top:-240px;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff06}
-.hero:after{content:"";position:absolute;z-index:1;left:0;bottom:0;width:70%;height:155px;pointer-events:none;background:linear-gradient(180deg,#70d59a 0%,#70d59a 100%);clip-path:polygon(0 0,15% 0,38% 28%,62% 67%,100% 100%,0 100%)}.hero-wave{position:absolute;z-index:1;left:0;bottom:0;width:70%;height:155px;pointer-events:none;background:linear-gradient(180deg,#42a6e8,#0870ca);clip-path:polygon(0 22%,18% 20%,40% 47%,65% 82%,100% 100%,0 100%)}
+
 .hero-photo{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:hidden}.hero-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 48%;opacity:1;mask-image:none}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,45,69,.82) 0%,rgba(18,51,79,.72) 38%,rgba(18,51,79,.43) 67%,rgba(18,51,79,.18) 100%)}.hero-content{position:relative;max-width:760px;z-index:2}.hero{background:linear-gradient(105deg,#244f70 0%,#326987 39%,rgba(55,112,143,.78) 51%,rgba(65,139,151,.12) 100%),linear-gradient(120deg,#244f70 0%,#397b9b 58%,#56a18e 100%)}
 .tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff30;background:#ffffff12;border-radius:99px;padding:9px 12px;color:#c9f3dd;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .tag i{width:7px;height:7px;border-radius:50%;background:#65d48b}
@@ -75,7 +75,7 @@ body{background:#f5faff;color:#153d70}
 .page-main{max-width:none;width:100%;margin:0 auto;padding:0;background:linear-gradient(180deg,#eaf6ff 0%,#f8fcff 70%,#fff 100%);position:relative}
 .hero{width:100%;min-height:500px;border-radius:0;padding:clamp(38px,4.2vw,70px) clamp(28px,4.2vw,70px);display:flex;align-items:center;box-shadow:none;background:#cceaff;isolation:isolate}
 .hero-photo{z-index:0}
-.hero-photo img{width:88%;height:100%;margin-left:auto;object-fit:contain;object-position:right center}
+.hero-photo img{width:100%;height:100%;margin:0;object-fit:cover;object-position:center center}
 .hero-photo:after{background:linear-gradient(90deg,rgba(236,248,255,.98) 0%,rgba(229,245,255,.94) 28%,rgba(215,239,255,.65) 47%,rgba(179,220,249,.16) 100%)}
 .hero-content{max-width:790px}
 .tag{background:#ffffffa8;border:1px solid #b6d8f3;color:#1761a5;letter-spacing:.12em}
@@ -121,7 +121,7 @@ section.access[hidden]{display:none!important}
   <a class="admin-login" href="admin.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg><span>Admin</span><span class="chevron">⌄</span></a>
 </header>
 <main class="page-main">
-<section class="hero" aria-labelledby="hero-title"><div class="hero-photo" aria-hidden="true"><img src="./ilustrasi-pengelolaan-bmn.webp" alt=""></div><div class="hero-wave" aria-hidden="true"></div><div class="hero-content">
+<section class="hero" aria-labelledby="hero-title"><div class="hero-photo" aria-hidden="true"><img src="./ilustrasi-pengelolaan-bmn.webp" alt=""></div><div class="hero-content">
 <div class="tag"><i></i> Portal Layanan BMN</div>
 <div class="titleline"><h1 id="hero-title">Portal Manajemen<br>Barang Milik Negara <em>(BMN)</em><br><span>Balai POM di Ende</span></h1></div>
 <p class="hero-subtitle">Transparan, Akuntabel, dan Profesional<br>dalam Pengelolaan BMN</p>
