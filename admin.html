@@ -1064,6 +1064,13 @@ tbody td{border-bottom:1px solid #edf1f5!important;color:#304b60!important}tbody
 .bmn-photo-modal{z-index:999999!important}
 @media(max-width:760px){#loginPage{justify-content:center!important;padding:18px!important;background:linear-gradient(135deg,#eaf4fa,#c8e0f0)!important}.login-card{padding:26px!important}.content{padding:16px!important}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 
+
+/* FIX login: background ilustrasi BMN, override style redesign terakhir */
+#loginPage{background:linear-gradient(90deg,rgba(239,247,252,.96) 0%,rgba(239,247,252,.88) 36%,rgba(239,247,252,.30) 72%,rgba(239,247,252,.12) 100%),url('./ilustrasi-pengelolaan-bmn.webp') center center/cover no-repeat!important;}
+#loginPage:before{display:none!important}
+#loginPage:after{content:"BALAI POM DI ENDE";}
+.login-card{background:rgba(255,255,255,.97)!important;}
+@media(max-width:760px){#loginPage{background:linear-gradient(100deg,rgba(239,247,252,.94),rgba(239,247,252,.72)),url('./ilustrasi-pengelolaan-bmn.webp') center/cover no-repeat!important;}}
 </style>
 </head>
 
