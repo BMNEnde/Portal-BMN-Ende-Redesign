@@ -2104,7 +2104,7 @@ body{overflow-x:hidden!important}
     function bukaAplikasi(namaAdmin) {
       el("loginPage").classList.add("hidden");
       el("appPage").classList.remove("hidden");
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 
       el("adminName").textContent = namaAdmin || "Administrator";
       el("adminAvatar").textContent =
@@ -2213,7 +2213,7 @@ body{overflow-x:hidden!important}
 
       el("topTitle").textContent = judul[nama] || "BMN";
       // Setiap perpindahan menu selalu membuka halaman dari posisi paling atas.
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 
       if (nama === "master") {
         muatReferensi();
