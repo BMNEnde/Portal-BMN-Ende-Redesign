@@ -2197,15 +2197,15 @@ tbody td{border-bottom:1px solid #edf1f5!important;color:#304b60!important}tbody
 
           const total = Math.max(0, Number(data.totalAset) || 0);
           const statusItems = [
-            ["tersedia", Number(data.tersedia) || 0],
-            ["dipinjam", Number(data.dipinjam) || 0],
-            ["pemeliharaan", Number(data.pemeliharaan) || 0],
-            ["nonaktif", Number(data.nonaktif) || 0]
+            ["Available", Number(data.tersedia) || 0],
+            ["Loan", Number(data.dipinjam) || 0],
+            ["Maintenance", Number(data.pemeliharaan) || 0],
+            ["Inactive", Number(data.nonaktif) || 0]
           ];
           statusItems.forEach(function(item) {
             const key = item[0], value = Math.max(0, item[1]);
-            const valueNode = el("dash" + key.charAt(0).toUpperCase() + key.slice(1) + "Value");
-            const barNode = el("dash" + key.charAt(0).toUpperCase() + key.slice(1) + "Bar");
+            const valueNode = el("dash" + key + "Value");
+            const barNode = el("dash" + key + "Bar");
             if (valueNode) valueNode.textContent = value;
             if (barNode) barNode.style.width = (total ? Math.min(100, value / total * 100) : 0) + "%";
           });
@@ -2477,6 +2477,8 @@ tbody td{border-bottom:1px solid #edf1f5!important;color:#304b60!important}tbody
 
       el("assetCount").textContent =
         "Menampilkan " + data.length + " aset";
+      const totalChip = el("masterTotalChip");
+      if (totalChip) totalChip.textContent = data.length.toLocaleString("id-ID") + " Aset";
     }
 
 
