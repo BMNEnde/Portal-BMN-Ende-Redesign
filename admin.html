@@ -1023,6 +1023,87 @@ input,select,textarea,.filter-bar input,.filter-bar select{border-radius:10px!im
     #loginPage:before,#loginPage:after{display:none}
     .login-card{background:rgba(255,255,255,.94);backdrop-filter:blur(8px);box-shadow:0 24px 70px rgba(13,45,70,.25)}
     @media(max-width:600px){#loginPage{background-position:center;background-size:cover}}
+
+    /* PENYESUAIAN DASHBOARD DAN MASTER ASET MENGIKUTI REFERENSI CANVA */
+    .section-eyebrow{display:block;margin-bottom:7px;color:#3983ad;font-size:9px;font-weight:800;letter-spacing:1.5px}
+    .dashboard-heading{align-items:flex-end}
+    .dashboard-heading h1,.master-heading h1{margin-bottom:7px}
+    .dashboard-heading p,.master-heading p{max-width:690px;line-height:1.65}
+    .dashboard-live{display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid #dce9f2;border-radius:30px;background:#fff;color:#557086;font-size:11px;font-weight:700;white-space:nowrap}
+    .dashboard-live span{width:7px;height:7px;border-radius:50%;background:#20a36b;box-shadow:0 0 0 4px #e4f6ed}
+    .dashboard-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .dashboard-stats .stat-card{min-height:124px;padding:21px 22px}
+    .dashboard-stats .stat-title{font-size:10px;letter-spacing:.7px}
+    .dashboard-stats .stat-value{font-size:31px}
+    .dashboard-stats .stat-note{font-size:11px}
+    .dashboard-stats .stat-card:before{position:absolute;right:18px;top:18px;width:34px;height:34px;display:grid;place-items:center;border-radius:11px;font-size:17px;font-weight:700;background:#edf5fb;color:#367da7}
+    .dashboard-stats .stat-total:before{content:"▦"}
+    .dashboard-stats .stat-active:before{content:"✓";background:#e8f6ef;color:#16845b}
+    .dashboard-stats .stat-available:before{content:"◉";background:#edf5fb;color:#2476c7}
+    .dashboard-stats .stat-loan:before{content:"⇄";background:#fff5e7;color:#c27b1b}
+    .dashboard-stats .stat-maintenance:before{content:"⚙";background:#fff5e7;color:#c27b1b}
+    .dashboard-stats .stat-inactive:before{content:"—";background:#f0f3f6;color:#738496}
+    .dashboard-bottom-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:18px;margin-top:2px}
+    .dashboard-bottom-grid .panel{min-width:0;min-height:300px;margin-bottom:0;padding:23px}
+    .dashboard-panel-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+    .dashboard-panel-heading h3{margin:0;font-size:16px}
+    .dashboard-panel-heading .section-eyebrow{margin-bottom:5px}
+    .panel-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#edf5fb;color:#286f9b;font-size:19px}
+    .dashboard-panel-description{margin-bottom:22px;font-size:12px!important;line-height:1.6!important}
+    .status-metric{margin:0 0 17px}
+    .status-metric>div:first-child{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;color:#526b80;font-size:12px}
+    .status-metric strong{color:#183f5e;font-size:13px}
+    .status-track{height:8px;overflow:hidden;border-radius:20px;background:#edf2f6}
+    .status-fill{display:block;height:100%;border-radius:20px;transition:width .35s ease}
+    .fill-green{background:#28a477}.fill-blue{background:#398bc7}.fill-orange{background:#d99a3b}.fill-gray{background:#9aa9b6}
+    .dashboard-quick-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .quick-link{min-width:0;display:grid;grid-template-columns:34px 1fr;grid-template-rows:auto auto;align-items:center;column-gap:10px;text-align:left;padding:13px 11px;border:1px solid #e4edf4;border-radius:12px;background:#fbfdff;color:#29485f;transition:.18s}
+    .quick-link:hover{border-color:#a9cce2;background:#f3f9fd;transform:translateY(-2px)}
+    .quick-link>span{grid-row:1/3;width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#eaf3fa;color:#2877a7;font-size:18px}
+    .quick-link strong{font-size:11px;line-height:1.35}
+    .quick-link small{margin-top:3px;color:#8293a2;font-size:9px}
+    .dashboard-note{display:flex;align-items:center;gap:10px;margin-top:17px;padding:12px 15px;border:1px solid #e3edf4;border-radius:11px;background:#f8fbfd}
+    .dashboard-note>span{width:20px;height:20px;flex:none;display:grid;place-items:center;border-radius:50%;background:#e4f0f8;color:#317ba6;font-size:12px;font-weight:800}
+    .dashboard-note p{font-size:11px;line-height:1.5}
+    .master-toolbar{display:grid;grid-template-columns:minmax(250px,2fr) minmax(180px,1fr) minmax(160px,.8fr) auto;gap:12px;align-items:end;margin:0 0 20px;padding:17px;background:#fff;border:1px solid #e5edf4;border-radius:15px;box-shadow:var(--shadow)}
+    .master-toolbar label{display:block;margin:0 0 7px;color:#526b80;font-size:11px;font-weight:700}
+    .master-search-field{display:flex;align-items:center;gap:9px;min-height:43px;padding:0 12px;border:1px solid #dce6ef;border-radius:10px;background:#fbfdff}
+    .master-search-field>span{color:#7290a5;font-size:21px;line-height:1}
+    .master-search-field input{width:100%;min-width:0;border:0!important;outline:0;background:transparent!important;box-shadow:none!important;padding:10px 0!important;font-size:12px}
+    .master-filter-field select{width:100%;min-height:43px;padding:10px 12px;border:1px solid #dce6ef;border-radius:10px;background:#fbfdff;color:#334b5e;font-size:12px}
+    .master-refresh-button{min-height:43px;white-space:nowrap}
+    .master-table-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 2px 11px}
+    .master-table-heading h3{color:#183f5e;font-size:15px;margin:0 0 4px}
+    .master-table-heading p{color:#8292a1;font-size:11px}
+    .master-total-chip{padding:7px 11px;border-radius:20px;background:#edf5fb;color:#286f9b;font-size:10px;font-weight:800;white-space:nowrap}
+    #page-master .table-wrap{overflow:hidden}
+    #page-master .table-scroll{overflow-x:auto}
+    #page-master table{min-width:1120px}
+    #page-master th{white-space:nowrap}
+    #page-master .table-footer{padding:13px 16px;background:#fbfdff;border-top:1px solid #edf2f6}
+    @media(max-width:1100px){
+      .dashboard-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .dashboard-bottom-grid{grid-template-columns:1fr}
+      .dashboard-bottom-grid .panel{min-height:unset}
+      .master-toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .master-search-wrap{grid-column:1/-1}
+    }
+    @media(max-width:700px){
+      .dashboard-heading{align-items:flex-start}
+      .dashboard-live{margin-top:2px}
+      .dashboard-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .dashboard-stats .stat-card{min-height:115px;padding:15px}
+      .dashboard-stats .stat-value{font-size:26px}
+      .dashboard-stats .stat-card:before{right:12px;top:12px;width:28px;height:28px;font-size:14px}
+      .dashboard-bottom-grid{gap:12px}
+      .dashboard-bottom-grid .panel{padding:17px}
+      .dashboard-quick-grid{gap:8px}
+      .quick-link{padding:10px 8px;grid-template-columns:29px 1fr;column-gap:7px}
+      .quick-link>span{width:29px;height:29px}
+      .master-toolbar{grid-template-columns:1fr;padding:13px;gap:10px}
+      .master-search-wrap{grid-column:auto}
+      .master-table-heading{align-items:flex-start}
+    }
 </style>
   <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
   <link rel="stylesheet" href="./mobile-polish.css">
@@ -1369,105 +1450,85 @@ tbody td{border-bottom:1px solid #edf1f5!important;color:#304b60!important}tbody
 
         <!-- DASHBOARD -->
 
-        <section id="page-dashboard">
+        <section id="page-dashboard" class="dashboard-page">
 
-          <div class="page-heading">
+          <div class="page-heading dashboard-heading">
             <div>
-              <h1>Dashboard</h1>
-              <p>Ringkasan informasi pengelolaan Barang Milik Negara.</p>
+              <span class="section-eyebrow">RINGKASAN ADMINISTRASI</span>
+              <h1>Dashboard Admin</h1>
+              <p>Selamat datang di Sistem Manajemen BMN Balai POM di Ende. Kelola aset secara transparan dan akuntabel.</p>
             </div>
+            <span class="dashboard-live"><span></span> Ringkasan data BMN</span>
           </div>
 
-          <div class="stats-grid">
-
-            <div class="stat-card">
-              <div class="stat-title">Total Aset BMN</div>
-              <div class="stat-value" id="statTotal">0</div>
-              <div class="stat-note">Seluruh aset yang tercatat</div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-title">Aset Aktif</div>
-              <div class="stat-value" id="statAktif">0</div>
-              <div class="stat-note">Status aset aktif</div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-title">Aset Tersedia</div>
-              <div class="stat-value" id="statTersedia">0</div>
-              <div class="stat-note">Siap digunakan atau dipinjam</div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-title">Aset Dipinjam</div>
-              <div class="stat-value" id="statDipinjam">0</div>
-              <div class="stat-note">Sedang dalam penggunaan pinjaman</div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-title">Pemeliharaan</div>
-              <div class="stat-value" id="statPemeliharaan">0</div>
-              <div class="stat-note">Aset dalam pemeliharaan</div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-title">Aset Nonaktif</div>
-              <div class="stat-value" id="statNonaktif">0</div>
-              <div class="stat-note">Aset berstatus nonaktif</div>
-            </div>
-
+          <div class="stats-grid dashboard-stats">
+            <div class="stat-card stat-total"><div class="stat-title">Total Aset BMN</div><div class="stat-value" id="statTotal">0</div><div class="stat-note">Seluruh aset yang tercatat</div></div>
+            <div class="stat-card stat-active"><div class="stat-title">Aset Aktif</div><div class="stat-value" id="statAktif">0</div><div class="stat-note">Status aset aktif</div></div>
+            <div class="stat-card stat-available"><div class="stat-title">Aset Tersedia</div><div class="stat-value" id="statTersedia">0</div><div class="stat-note">Siap digunakan atau dipinjam</div></div>
+            <div class="stat-card stat-loan"><div class="stat-title">Aset Dipinjam</div><div class="stat-value" id="statDipinjam">0</div><div class="stat-note">Sedang dalam penggunaan pinjaman</div></div>
+            <div class="stat-card stat-maintenance"><div class="stat-title">Pemeliharaan</div><div class="stat-value" id="statPemeliharaan">0</div><div class="stat-note">Aset dalam pemeliharaan</div></div>
+            <div class="stat-card stat-inactive"><div class="stat-title">Aset Nonaktif</div><div class="stat-value" id="statNonaktif">0</div><div class="stat-note">Aset berstatus nonaktif</div></div>
           </div>
 
-          <div class="panel">
-            <h3>Selamat Datang di Sistem Manajemen BMN</h3>
-            <p>
-              Sistem ini digunakan untuk membantu pengelolaan data Barang
-              Milik Negara, mulai dari pencatatan aset, pemantauan kondisi,
-              status penggunaan, hingga pengelolaan peminjaman.
-            </p>
+          <div class="dashboard-bottom-grid">
+            <section class="panel dashboard-status-panel">
+              <div class="dashboard-panel-heading"><div><span class="section-eyebrow">MONITORING INVENTARIS</span><h3>Ringkasan Status Aset</h3></div><span class="panel-icon">▥</span></div>
+              <p class="dashboard-panel-description">Komposisi aset berdasarkan status pengelolaan yang tercatat pada sistem.</p>
+              <div class="status-metric"><div><span>Tersedia</span><strong id="dashAvailableValue">0</strong></div><div class="status-track"><span id="dashAvailableBar" class="status-fill fill-green" style="width:0%"></span></div></div>
+              <div class="status-metric"><div><span>Dipinjam</span><strong id="dashLoanValue">0</strong></div><div class="status-track"><span id="dashLoanBar" class="status-fill fill-blue" style="width:0%"></span></div></div>
+              <div class="status-metric"><div><span>Pemeliharaan</span><strong id="dashMaintenanceValue">0</strong></div><div class="status-track"><span id="dashMaintenanceBar" class="status-fill fill-orange" style="width:0%"></span></div></div>
+              <div class="status-metric"><div><span>Nonaktif</span><strong id="dashInactiveValue">0</strong></div><div class="status-track"><span id="dashInactiveBar" class="status-fill fill-gray" style="width:0%"></span></div></div>
+            </section>
+
+            <section class="panel dashboard-quick-panel">
+              <div class="dashboard-panel-heading"><div><span class="section-eyebrow">NAVIGASI CEPAT</span><h3>Akses Cepat</h3></div><span class="panel-icon">⌘</span></div>
+              <p class="dashboard-panel-description">Buka bagian yang sering digunakan untuk pengelolaan BMN.</p>
+              <div class="dashboard-quick-grid">
+                <button type="button" class="quick-link" onclick="bukaHalaman('master')"><span>▤</span><strong>Master Aset</strong><small>Kelola inventaris</small></button>
+                <button type="button" class="quick-link" onclick="bukaHalaman('peminjaman')"><span>⇄</span><strong>Peminjaman</strong><small>Tinjau permohonan</small></button>
+                <button type="button" class="quick-link" onclick="bukaHalaman('pengembalian')"><span>↩</span><strong>Pengembalian</strong><small>Catat pengembalian</small></button>
+                <button type="button" class="quick-link" onclick="bukaHalaman('laporan')"><span>▥</span><strong>Laporan BMN</strong><small>Lihat rekap data</small></button>
+              </div>
+            </section>
           </div>
+
+          <div class="dashboard-note"><span>i</span><p>Angka dan ringkasan pada dashboard mengikuti data aktual yang berhasil dimuat dari database BMN.</p></div>
 
         </section>
 
 
         <!-- MASTER BMN -->
 
-        <section id="page-master" class="hidden">
+        <section id="page-master" class="hidden master-page">
 
-          <div class="page-heading">
+          <div class="page-heading master-heading">
             <div>
-              <h1>Master BMN</h1>
-              <p>Kelola data inventaris Barang Milik Negara.</p>
+              <span class="section-eyebrow">INVENTARIS BARANG MILIK NEGARA</span>
+              <h1>Master Aset</h1>
+              <p>Kelola, telusuri, dan pantau data inventaris Barang Milik Negara.</p>
             </div>
 
-            <button class="btn btn-primary" id="addAssetButton">
-              + Tambah Aset
+            <button class="btn btn-primary master-add-button" id="addAssetButton">
+              <span aria-hidden="true">＋</span> Tambah Aset
             </button>
           </div>
 
-          <div class="filter-bar">
-
-            <input
-              type="text"
-              id="searchAsset"
-              placeholder="Cari kode, nama, jenis, merk, lokasi..."
-            >
-
-            <select id="filterJenis">
-              <option value="">Semua Jenis BMN</option>
-            </select>
-
-            <select id="filterStatus">
-              <option value="">Semua Status</option>
-              <option value="AKTIF">Aktif</option>
-              <option value="NONAKTIF">Nonaktif</option>
-            </select>
-
-            <button class="btn btn-light" id="refreshAssetButton">
-              ↻ Muat Ulang
-            </button>
-
+          <div class="master-toolbar">
+            <div class="master-search-wrap">
+              <label for="searchAsset">Cari Aset</label>
+              <div class="master-search-field"><span aria-hidden="true">⌕</span><input type="text" id="searchAsset" placeholder="Cari kode, nama, jenis, merk, lokasi..."></div>
+            </div>
+            <div class="master-filter-field">
+              <label for="filterJenis">Jenis BMN</label>
+              <select id="filterJenis"><option value="">Semua Jenis BMN</option></select>
+            </div>
+            <div class="master-filter-field">
+              <label for="filterStatus">Status Aset</label>
+              <select id="filterStatus"><option value="">Semua Status</option><option value="AKTIF">Aktif</option><option value="NONAKTIF">Nonaktif</option></select>
+            </div>
+            <button class="btn btn-light master-refresh-button" id="refreshAssetButton"><span aria-hidden="true">↻</span> Muat Ulang</button>
           </div>
+          <div class="master-table-heading"><div><h3>Daftar Inventaris Aset</h3><p>Data aset yang tersimpan pada database BMN.</p></div><span class="master-total-chip" id="masterTotalChip">0 Aset</span></div>
 
           <div class="table-wrap">
 
@@ -2133,6 +2194,23 @@ tbody td{border-bottom:1px solid #edf1f5!important;color:#304b60!important}tbody
           el("statPemeliharaan").textContent =
             data.pemeliharaan || 0;
           el("statNonaktif").textContent = data.nonaktif || 0;
+
+          const total = Math.max(0, Number(data.totalAset) || 0);
+          const statusItems = [
+            ["tersedia", Number(data.tersedia) || 0],
+            ["dipinjam", Number(data.dipinjam) || 0],
+            ["pemeliharaan", Number(data.pemeliharaan) || 0],
+            ["nonaktif", Number(data.nonaktif) || 0]
+          ];
+          statusItems.forEach(function(item) {
+            const key = item[0], value = Math.max(0, item[1]);
+            const valueNode = el("dash" + key.charAt(0).toUpperCase() + key.slice(1) + "Value");
+            const barNode = el("dash" + key.charAt(0).toUpperCase() + key.slice(1) + "Bar");
+            if (valueNode) valueNode.textContent = value;
+            if (barNode) barNode.style.width = (total ? Math.min(100, value / total * 100) : 0) + "%";
+          });
+          const chip = el("masterTotalChip");
+          if (chip) chip.textContent = total.toLocaleString("id-ID") + " Aset";
         })
         .withFailureHandler(function(error) {
           tampilToast(error.message, true);
