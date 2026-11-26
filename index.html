@@ -59,10 +59,10 @@ header{gap:16px}
 body{background:#f5faff;color:#153d70}
 .site-header{width:100%;max-width:none;margin:0;padding:10px clamp(18px,4vw,68px);min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(100deg,#f8fcff 0%,#e5f3ff 55%,#d9edff 100%);border-bottom:1px solid #cfe3f5;box-shadow:0 5px 20px #1a5a9410;position:relative;z-index:5}
 .logo-pair{display:flex;align-items:center;gap:14px;flex:none;text-decoration:none;max-width:250px}
-.site-header .brandmark{width:88px;height:58px;padding:3px;border:0;border-radius:0;background:transparent;box-shadow:none}
-.site-header .brandmark:first-child{width:82px;border-right:1px solid #1d5c9a;padding-right:12px}
-.site-header .brandmark.bmnmark{width:104px;padding-left:5px}
-.site-header .brandmark img{object-fit:contain}
+.site-header .brandmark{width:100px;height:76px;padding:5px;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible;flex:none}
+.site-header .brandmark:first-child{width:96px;height:76px;border-right:1px solid #1d5c9a;padding-right:12px}
+.site-header .brandmark.bmnmark{width:130px;height:76px;padding-left:8px}
+.site-header .brandmark img{width:100%;height:100%;object-fit:contain;overflow:visible;display:block}
 .main-nav{display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.7vw,28px);flex:1;min-width:0}
 .nav-link{display:inline-flex;align-items:center;gap:9px;padding:13px 14px;border-radius:30px;text-decoration:none;color:#12427a;font-size:15px;font-weight:750;white-space:nowrap;transition:.18s}
 .nav-link svg,.admin-login svg,.mobile-menu svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
@@ -75,7 +75,7 @@ body{background:#f5faff;color:#153d70}
 .page-main{max-width:none;width:100%;margin:0 auto;padding:0;background:linear-gradient(180deg,#eaf6ff 0%,#f8fcff 70%,#fff 100%);position:relative}
 .hero{width:100%;min-height:500px;border-radius:0;padding:clamp(38px,4.2vw,70px) clamp(28px,4.2vw,70px);display:flex;align-items:center;box-shadow:none;background:#cceaff;isolation:isolate}
 .hero-photo{z-index:0}
-.hero-photo img{object-position:center 46%}
+.hero-photo img{width:88%;height:100%;margin-left:auto;object-fit:contain;object-position:right center}
 .hero-photo:after{background:linear-gradient(90deg,rgba(236,248,255,.98) 0%,rgba(229,245,255,.94) 28%,rgba(215,239,255,.65) 47%,rgba(179,220,249,.16) 100%)}
 .hero-content{max-width:790px}
 .tag{background:#ffffffa8;border:1px solid #b6d8f3;color:#1761a5;letter-spacing:.12em}
@@ -103,9 +103,9 @@ clip-path:polygon(0 60%,2% 60%,2% 47%,4% 47%,4% 63%,7% 63%,7% 39%,9% 39%,9% 62%,
 .card-arrow{width:42px;height:42px;border-radius:50%;background:#e8f2ff;color:#075db5;display:grid;place-items:center;font-size:25px;font-weight:700}
 .note{position:relative;z-index:1;max-width:1180px;margin:20px auto 0}
 footer{max-width:none;padding:22px clamp(20px,4vw,66px);background:#eaf5ff;border-top:1px solid #d8e9f8}
-@media(max-width:1100px){.site-header{gap:15px}.site-header .brandmark{width:72px}.site-header .brandmark:first-child{width:68px}.site-header .brandmark.bmnmark{width:86px}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:760px){.site-header{min-height:76px;padding:8px 16px;justify-content:space-between}.logo-pair{gap:8px}.site-header .brandmark{width:58px;height:48px}.site-header .brandmark:first-child{width:56px;padding-right:7px}.site-header .brandmark.bmnmark{width:68px;padding-left:3px}.admin-login{margin-left:auto;padding:10px 13px;font-size:13px}.mobile-menu{display:none}.hero{min-height:480px;padding:34px 22px;align-items:flex-start}.hero-photo img{object-position:62% center}.hero-photo:after{background:linear-gradient(90deg,rgba(236,248,255,.97),rgba(229,245,255,.82) 58%,rgba(215,239,255,.28))}.hero-content{max-width:100%}h1{font-size:clamp(33px,8vw,46px)}.hero .hero-subtitle{font-size:16px}.titleline{margin:28px 0 16px}section.access{padding:24px 16px 38px}.cards{grid-template-columns:1fr;gap:12px}.card{min-height:112px;padding:15px;grid-template-columns:58px minmax(0,1fr) 36px;gap:12px}.icon{width:56px;height:56px}.icon svg{width:27px;height:27px}.card-copy h3{font-size:17px}.card-copy p{font-size:12px}.card-arrow{width:36px;height:36px;font-size:21px}.note{font-size:11px}}
-@media(max-width:390px){.site-header .brandmark{width:49px}.site-header .brandmark:first-child{width:48px}.site-header .brandmark.bmnmark{width:58px}.logo-pair{gap:6px}.admin-login{padding:9px 10px}.hero{min-height:450px}}
+@media(max-width:1100px){.site-header{gap:15px}.site-header .brandmark{width:82px;height:68px}.site-header .brandmark:first-child{width:78px;height:68px}.site-header .brandmark.bmnmark{width:108px;height:68px}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.site-header{min-height:76px;padding:8px 16px;justify-content:space-between}.logo-pair{gap:8px}.site-header .brandmark{width:62px;height:56px}.site-header .brandmark:first-child{width:58px;height:56px;padding-right:7px}.site-header .brandmark.bmnmark{width:80px;height:56px;padding-left:3px}.admin-login{margin-left:auto;padding:10px 13px;font-size:13px}.mobile-menu{display:none}.hero{min-height:480px;padding:34px 22px;align-items:flex-start}.hero-photo img{width:100%;object-fit:cover;object-position:62% center}.hero-photo:after{background:linear-gradient(90deg,rgba(236,248,255,.97),rgba(229,245,255,.82) 58%,rgba(215,239,255,.28))}.hero-content{max-width:100%}h1{font-size:clamp(33px,8vw,46px)}.hero .hero-subtitle{font-size:16px}.titleline{margin:28px 0 16px}section.access{padding:24px 16px 38px}.cards{grid-template-columns:1fr;gap:12px}.card{min-height:112px;padding:15px;grid-template-columns:58px minmax(0,1fr) 36px;gap:12px}.icon{width:56px;height:56px}.icon svg{width:27px;height:27px}.card-copy h3{font-size:17px}.card-copy p{font-size:12px}.card-arrow{width:36px;height:36px;font-size:21px}.note{font-size:11px}}
+@media(max-width:390px){.site-header .brandmark{width:52px;height:50px}.site-header .brandmark:first-child{width:48px;height:50px}.site-header .brandmark.bmnmark{width:66px;height:50px}.logo-pair{gap:6px}.admin-login{padding:9px 10px}.hero{min-height:450px}}
 section.access[hidden]{display:none!important}
 </style>
 <link rel="stylesheet" href="./mobile-polish.css">
