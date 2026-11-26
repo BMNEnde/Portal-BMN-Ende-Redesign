@@ -1322,6 +1322,75 @@ tbody td{border-bottom:1px solid #edf1f5!important;color:#304b60!important}tbody
 #loginPage:not(.hidden) { display: flex !important; }
 #appPage:not(.hidden) { display: block !important; }
 </style>
+
+<style id="bmn-dashboard-visual-refinement">
+/* Penyempurnaan visual dashboard saja — tidak mengubah struktur atau fungsi aplikasi */
+#page-dashboard{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden;
+  border-radius:18px;
+  background:
+    linear-gradient(135deg,rgba(244,249,252,.77),rgba(237,246,250,.79)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 520'%3E%3Cg fill='none' stroke='%230b5a88' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' opacity='.23'%3E%3Cpath d='M55 125h145v-80H55z M75 125V75h30v50 M125 75h55v50 M80 150h95v55H80z M105 150v55 M150 150v55'/%3E%3Cpath d='M320 130h180l28 48v42H292v-42z M345 130l18-38h90l26 38 M330 177h178 M345 220a20 20 0 1 0 0-40 20 20 0 0 0 0 40z M475 220a20 20 0 1 0 0-40 20 20 0 0 0 0 40z'/%3E%3Cpath d='M650 65h170v125H650z M675 90h120v75H675z M710 190v25h50v-25 M680 215h110'/%3E%3Cpath d='M90 340h150v90H90z M110 360h110v48H110z M145 430v18h40v-18 M125 448h80'/%3E%3Cpath d='M360 335h165v100H360z M380 355h125v60H380z M425 435v20h35v-20 M400 455h85'/%3E%3Cpath d='M660 330h155v105H660z M685 355h105v55H685z M700 435v18h75v-18'/%3E%3C/g%3E%3C/svg%3E") center/cover fixed,
+    #f1f7fb!important;
+  padding:clamp(18px,2.2vw,30px)!important;
+}
+#page-dashboard>*{position:relative;z-index:1}
+#page-dashboard .dashboard-heading{padding:8px 4px 20px}
+#page-dashboard .dashboard-heading h1{color:#0b3b60!important;letter-spacing:-.6px}
+#page-dashboard .dashboard-heading p{color:#536e82!important}
+#page-dashboard .dashboard-live{box-shadow:0 5px 18px rgba(12,57,86,.07)}
+/* Hanya ikon dekoratif di sisi kanan kartu statistik yang disembunyikan.
+   Ikon navigasi sidebar dan ikon fungsi lainnya tetap dipertahankan. */
+#page-dashboard .dashboard-stats .stat-card:before{display:none!important;content:none!important}
+#page-dashboard .dashboard-stats .stat-card{
+  min-height:118px;
+  border:1px solid rgba(210,226,237,.95)!important;
+  background:rgba(255,255,255,.94)!important;
+  box-shadow:0 9px 25px rgba(17,61,88,.09)!important;
+  backdrop-filter:blur(8px);
+}
+#page-dashboard .dashboard-stats .stat-title{padding-right:0!important}
+#page-dashboard .dashboard-bottom-grid .panel{
+  background:rgba(255,255,255,.95)!important;
+  box-shadow:0 9px 26px rgba(17,61,88,.075)!important;
+  backdrop-filter:blur(8px);
+}
+/* Ikon sidebar tetap ada, dengan bidang ikon yang rapi dan modern. */
+.sidebar .menu-item{
+  display:flex!important;align-items:center!important;gap:13px!important;
+  min-height:46px!important;padding:11px 15px!important;
+  border:1px solid transparent!important;border-radius:12px!important;
+  font-weight:650!important;letter-spacing:.05px;
+}
+.sidebar .menu-icon{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  flex:0 0 28px!important;width:28px!important;height:28px!important;
+  margin:0!important;border-radius:9px!important;
+  background:rgba(255,255,255,.10)!important;
+  color:#d8edfa!important;font-size:16px!important;line-height:1!important;
+}
+.sidebar .menu-item:hover .menu-icon,
+.sidebar .menu-item.active .menu-icon{
+  background:rgba(255,255,255,.19)!important;color:#fff!important;
+}
+.sidebar .menu-item.active{
+  border-color:rgba(255,255,255,.13)!important;
+  background:linear-gradient(105deg,#1684b9,#126397)!important;
+  box-shadow:0 7px 18px rgba(0,0,0,.14)!important;
+}
+.sidebar .menu-label{padding:15px 16px 8px!important}
+@media(max-width:700px){
+  #page-dashboard{padding:15px!important;border-radius:12px}
+  #page-dashboard .dashboard-heading{padding:3px 1px 15px}
+  #page-dashboard .dashboard-stats .stat-card{min-height:108px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sidebar .menu-item{transition:none!important}
+}
+</style>
+
 </head>
 
 <body>
